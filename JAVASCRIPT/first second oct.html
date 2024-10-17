@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="time"></h1>
+    <script>
+        setInterval(() => {
+            var time = new Date()
+            //get current day name ,month name and date with time
+
+            let options = { weeekday: 'long', year: 'numeric', month: 'long', day: 'numeric', time: 'numeric' };
+
+            console.log(time.toLocaleDateString('en-US', options));//"sunday .octomber2,2024"
+            document.getElementById("time").innerHTML = time.toLocaleTimeString('en-US', options)
+        }, 1000);
+
+
+        // find length of array
+
+        var std = ['Milan', 'Darshan', 'Bhavy']
+        console.log(std.length);
+
+        //push : add element to end of the array
+        std.push('Raghu');
+        console.log(std);
+
+        //pop : remove element from end of the array
+
+        var stdt = std.pop();
+        console.log(std);
+        console.log(stdt);
+
+        //unshift : to add element at first of array
+
+        std.unshift('Suresh');
+        console.log(std);
+
+        //shift : to remove element from first of array
+        var shiftedElement = std.shift();
+        console.log(std);
+        console.log(shiftedElement);
+    </script>
+
+</body>
+
+</html>

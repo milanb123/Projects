@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        var product = [
+            { name: 'Laptop', price: 1500, instock: true },
+            { name: 'Phone', price: 800, instock: false },
+            { name: 'tablet', price: 600, instock: true },
+            { name: 'Headphone', price: 100, instock: true },
+            { name: 'Smartwatch', price: 250, instock: true },
+        ]
+        //  var products = product.filter((result) => { { return { name: result.name, price: result.price + 20, instock: false } })
+
+
+        var products = product.filter((result) => {
+            if (result.instoke = true && price >= 1500) {
+                return { name: result.name, price: result.price, instock: result.instock }
+            }
+
+            else {
+                return result
+            }
+        })
+
+
+        console.log(products);
+    </script>
+
+</body>
+
+</html>

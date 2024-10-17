@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .box {
+        box-sizing: content-box;
+        width: 100%;
+
+    }
+
+    .box {
+        box-sizing: content-box;
+        width: 100%;
+        border: solid black 10px;
+        padding: 5px;
+
+
+    }
+    .box {
+        box-sizing: content-box;
+        width: 100%;
+        border: solid black 10px;
+        padding: 5px;
+
+
+    }*/
+    .box {
+
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+        height: 100px;
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+        border: 5px dashed black;
+        background-color: aqua;
+
+        /*
+        - dafult value
+        -background-clip: border box;
+        it cover only content area of div
+
+        -background-clip: content-box;
+        it cover both area padding and content of div
+        */
+
+        background-clip: content-box;
+        background-clip: border-box;
+
+
+
+
+    }
+
+    /* to make any shape use clip path*/
+
+    /*background origin
+    background size by defult auto hase
+    
+    background-size:contain 
+    the image is resize
+    
+    background-size:cover
+    the image is fixe without white space
+    
+    to fix image in contain use 
+    background-size: 100% 100%
+    defult position 
+    background-position:top left(0% 0%)
+    */
+
+
+
+
+
+    .box {
+        height: auto;
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+        border: 5px dashed black;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+        /*background-origin: content-box;*/
+
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+
+
+
+</body>
+
+</html>
